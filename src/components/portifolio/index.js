@@ -2,13 +2,14 @@ import { Link } from 'react-router-dom';
 import Container from '../container';
 import Conteudo from './conteudo';
 import Imagem from './imagem';
+import Titulo from './titulo';
 
 function Portifolio(props) {
     const { nome, descricao, rota,  imagem, temLinkInicio } = props;
 
     return(
         <Container>
-          <h1>{nome}</h1>
+          <Titulo>{nome}</Titulo>
           <Imagem imgSrc={imagem}/>
           <Conteudo>{descricao}</Conteudo>
           {rota && <Link to={rota}>Ir para outro portifolio.</Link>}
