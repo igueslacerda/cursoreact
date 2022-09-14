@@ -1,9 +1,9 @@
-function Imagem(props) {
+import { Avatar } from "@mui/material";
+
+export default function Imagem(props) {
     const { imgSrc } = props;
 
     return(
-        <>{imgSrc && <img src={imgSrc} alt="" style={{ height: 200 }}/>}</>
+        <>{imgSrc && <Avatar src={imgSrc} alt=""/>}</>
     );
 }
-
-export default Imagem;
