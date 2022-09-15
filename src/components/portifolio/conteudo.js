@@ -1,7 +1,9 @@
+import { Typography } from "@mui/material";
+
 function Conteudo(props) {
     const { children } = props;
     return(
-        <p>{children}</p>
+        <Typography variant="body2" display="block" gutterBottom>{children}</Typography>
     );    
 }
 
